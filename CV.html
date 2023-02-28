@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUtRARDUXUwN0NkdSkzUXwvOFFJO0hpZEJQdEcICAkVLDVQBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAkRLzN3/ycmbf8lJGn/IyJe/yQjY/8nJm3/REmU/wcHB1AJCgojLDVQBQAAAAAAAAAAAAAAAAAAAAAAAAAAXmiv/zs8l/8wL4v/MC+L/ywqhv8sKob/LyuQ/z5Bmv8GBgdECQoKIyw1UAUAAAAAAAAAAAAAAAAAAAAAAAAAAFpjsv89PZ7/NzaT/zEvmf9GWbL/MTCX/zMxm/89PJ3/eYXD/yw1UAUAAAAAAAAAAAAAAAAAAAAAAAAAAI6c0P9HS6T/Ojmb/zY0nv8vLZb/NTKb/zk3mv8zNpv/PTye/2Jss/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABreL//RUmg/zk7kf81Mpn/MTOV/y4ykP8zM5X/Mzab/zc1lv9KT5//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU1qu/zAvi/8sKoT/JySD/yQog/8iI3z/IiR//yIjfP8nJIP/JiF5/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExTn/8wL4v/KiiA/yAfdf8hInv/IiB//ykuiv8jHHv/IiKA/yQYc/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3hsv/ODaf/y4slP8mJJj/JSaP/y0uof8mJJj/JCCJ/yUchf8kG3n/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD9Btv82Jbr/gZbw/6K99v+Gm/L/h5zy/2+C5/8qG6H/j53R/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNoOn+d4vr/4a38v8zW7b/WZ7V/2uY4v96jez/SEfM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFme7/mqvs3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA8B8AAOAfAADgDwAAwA8AAMAPAADADwAAwA8AAMAPAADgDwAA4B8AAPn/AAD//wAA//8AAA==" rel="icon" type="image/x-icon"/>
+        <link rel="stylesheet" href="C:\Users\micae_000\Desktop\html\Proyecto cv\css\estilos.css">
+        <title>CV Light Yagami</title>
+    </head>
+    <body> 
+        <!-- Botontop -->
+        <button onclick="topFunction()" id="botontop" title="Go to top">Top</button>
+        
+        <!-- Encabezado -->
+        <header>
+            <seccion id="encabezado1">
+              <h1>Yagami Light</h1>
+                <p>Detective de la fuerza especial de investigaci&oacuten</p>
+            </seccion>
+            <section id="encabezado2">
+                 <img src="data:image/jpeg;base64,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" alt="fotolightyagami" width="" height="">
+
+            </section>     
+        </header>
+        
+        <!-- Barra de navegacion -->
+        <nav id="navbar">
+            <a href="#cuerpo">Home</a>
+            <a href="#informacion">Datos</a>
+            <a href="#estudios">Estudios</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+          
+        <!-- Cuerpo -->
+        <section id="cuerpo">
+            <!-- Columna izquierda -->
+            <section id="columnaizq">
+                <img src="https://w0.peakpx.com/wallpaper/294/966/HD-wallpaper-yagami-light-anime-anime-art-anime-death-note-death-note-edits-ryuuk-shinigami.jpg" alt="lightyagami" class="responsive">
+            </section>
+            <!-- Columna derecha -->
+            <section id="columnader">
+                <h2>Resumen personal</h2>
+                &nbsp;&nbsp;&nbsp;&nbsp;<p>Policía con más de 4 años de experiencia como detective y contacto previo con la fuerza como ayudante esporadico. Especializado en investigaci &oacuten de casos especiales con ingerencias internacionales. Amplio conocimiento de las leyes y sus aplicaciones practicas. Excelente habilidad en técnicas de investigación criminalística. Dominio perfecto del japones e ingles.</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;<p>Lineamiento:</p>
+                <h3 id="cita">"Este mundo est&aacute; podrido, lleno de maldad, necesita a alguien con el poder suficiente para exterminar a toda esa maldad."</h3>
+            </section>
+        </section>
+        
+        <!-- Información general -->
+        <section id="informacion">
+            <i class="glyphicon glyphicon-user" style="font-size:36px;"></i>
+            <h3>Informaci&oacute;n general</h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <ul>
+                <li>Genero: Masculino.</li>
+                <li>Fecha de nacimiento: 28/02/1986</li>
+                <li>Pais: Jap &oacute;n</li>
+                <li>Prefectura: Tokio </li>
+                <li>Direccion: 1-chome 9, Marunouchi, Chiyoda-ku</li>
+            </ul>
+        </section>
+       
+        <!-- estudios -->
+        <section id="estudios">
+            <i class="glyphicon glyphicon-education" style="font-size:36px;"></i>
+            <h3>Formaci&oacute;n academica</h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;<p>(1998-2004)Graduado de la Academia Privada Daikoku</p>
+            <p>(1998-2004)Graduado Preparatoria Gamou</p>
+            <p>
+                (2004-2008)Graduado en derecho en la universidad <a href="https://www.toho-u.ac.jp/english/index.html" target="_blank">To-Oh</a>
+            </p>
+        </section>
+        
+        <!-- Boton experiecia laboral -->
+        <section id="experiencia">
+            <i class="glyphicon glyphicon-briefcase" style="font-size:36px;"></i>
+            <h3>Experiencia laboral</h3>
+            &nbsp;&nbsp;&nbsp;&nbsp;<p>(2002-2005) Ayudante ocacional de la NPA Agencia de Policía Naciona de jap &oacute;n</p>
+            <p>(2005-actualidad) Miembro de la Fuerza Especial de Investigaci &oacute;n</p>
+            <p>(2005-actualidad) Miembro de la NPA Agencia de Policía Naciona de japon</p>
+        </section>
+
+        <!-- habilidades -->
+        <section id="habilidades">
+            <i class="glyphicon glyphicon-apple" style="font-size:36px;"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;<h3>Aptitudes</h3>
+            <p>Bilingue en Japones e Ingles </p>
+            <p>Leyes y normativas urbanas</p>
+            <p>Aptitud fisica alta.</p>
+            <p>Manejo de programas: excel, word, power point.</p>
+            <p>Pensamiento estrategico.</p>
+            <p>Mentalidad analitica.</p>
+            <p>Resoluci &oacute;n efectiva de conflictos.    </p>
+        </section>
+        
+        <!--Pie de pagina -->
+        <footer>     
+            <div class="Redes">
+                <h4>Redes</h4>
+                <!-- Boton Facebook -->
+                <a id="facebook" href="https://www.facebook.com/profile.php?id=100088169285271">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Enlace a  facebook" style="width:42px;height:42px;">
+                </a>
+                <!-- Boton Instagram -->
+                <a id="instagram" href="https://www.instagram.com/official.lightyagami/?hl=es">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Enlace a instagram" style="width:42px;height:42px;">
+                </a>
+                <!-- Boton Twitter -->
+                <a id="twitter" href="https://twitter.com/lightyagami_k?lang=es">
+                <img src="https://cdn-icons-png.flaticon.com/512/4096/4096132.png" alt="Enlace a twitter" style="width:42px;height:42px;">
+                </a>
+                <!-- Boton Linkedin -->
+                <a id="linkedin" href="https://in.linkedin.com/in/light-yagami-643105205?trk=public_profile_samename-profile">
+                <img src="https://cdn-icons-png.flaticon.com/512/3938/3938061.png" alt="Enlace a linkedin" style="width:42px;height:42px;">
+                </a>
+            </div>  
+            <div class="Contacto">
+                <h4>Contacto</h4>
+                 <!-- Correo electronico -->
+                 <p><img id="correo" src="https://cdn-icons-png.flaticon.com/512/3178/3178165.png" alt="Imagen de carta" width="42" height="42"><a href="mailto:Lightyagami@xxxxx.com">Lightyagami@xxxxx.com</a></li></p>
+                <!-- Numero de telefono -->
+                <p><img id="telefono" src="https://cdn-icons-png.flaticon.com/512/1509/1509974.png" alt="Imagen de telefono" width="42" height="42">+81 (03) xxxx-xxxx</p></li>
+            </div>     
+            <div class="Copyright">
+                <h4>CV Light Yagami</h4>
+                <p>Copyright &copy; 2023</p>
+            </div>      
+        </footer>
+<script>
+    
+// Cuando el usuario se desplaza por la página, ejecuta myFunction
+window.onscroll = function() {myFunction()};
+
+// Obtener la barra de navegación
+var navbar = document.getElementById("navbar");
+
+// Obtener la posición de desplazamiento de la barra de navegación
+var sticky = navbar.offsetTop;
+
+// Agregue la clase "sticky" a la barra de navegación cuando llegue a su posición de desplazamiento. Eliminar "sticky" cuando deje la posición de desplazamiento
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+ 
+</script>
+    </body>
+    </html>
+    <script src="C:\Users\micae_000\Desktop\html\Proyecto cv\js\funciones.js"></script>
